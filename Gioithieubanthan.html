@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Giới Thiệu Bản Thân</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .jumbotron {
+      background: linear-gradient(to right, #4CAF50, #81C784);
+      color: white;
+      padding: 50px 25px;
+      margin-bottom: 30px;
+    }
+
+    .container .col-sm-4 {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer; /* trỏ chuột khi hover */
+      transition: transform 0.2s;
+    }
+
+    .container .col-sm-4:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+
+    .container h3 {
+      color: #2E7D32;
+      margin-bottom: 15px;
+    }
+
+    .container p {
+      color: #555555;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>GIỚI THIỆU BẢN THÂN</h1>
+  <p>Chào mừng đến với trang cá nhân của tôi</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <!-- Thông tin Sinh Viên -->
+    <div class="col-sm-4" data-toggle="modal" data-target="#modalInfo">
+      <h3>THÔNG TIN SINH VIÊN</h3>
+      <p>Họ và Tên: Kiên Anh Tuấn</p>
+      <p>Mã Lớp: 110124208</p>
+      <p>Lớp: DA24TTD</p>
+    </div>
+    
+    <!-- Ngành đang học -->
+    <div class="col-sm-4" data-toggle="modal" data-target="#modalMajor">
+      <h3>NGÀNH ĐANG HỌC</h3>
+      <p>Công Nghệ Thông Tin</p>
+      <p>Information Technology</p>
+    </div>
+    
+    <!-- Quê quán & Nghề nghiệp -->
+    <div class="col-sm-4" data-toggle="modal" data-target="#modalHometown">
+      <h3>QUÊ QUÁN & NGHỀ NGHIỆP</h3>        
+      <p>Quê quán: Trà Vinh</p>
+      <p>Nghề nghiệp: Sinh Viên</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Thông tin Sinh viên -->
+<div id="modalInfo" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#4CAF50; color:white;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Thông Tin Sinh Viên</h4>
+      </div>
+      <div class="modal-body">
+        <p>Họ và Tên: Kiên Anh Tuấn</p>
+        <p>Mã Lớp: 110124208</p>
+        <p>Lớp: DA24TTD</p>
+        <p>Ngày sinh: 01/01/2000</p>
+        <p>Email: kienantuann@example.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ngành đang học -->
+<div id="modalMajor" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#4CAF50; color:white;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Ngành Đang Học</h4>
+      </div>
+      <div class="modal-body">
+        <p>Ngành: Công Nghệ Thông Tin</p>
+        <p>Tiếng Anh: Information Technology</p>
+        <p>Mô tả: Học về lập trình, quản trị hệ thống, mạng và phát triển ứng dụng.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Quê quán & Nghề nghiệp -->
+<div id="modalHometown" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#4CAF50; color:white;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quê Quán & Nghề Nghiệp</h4>
+      </div>
+      <div class="modal-body">
+        <p>Quê quán: Trà Vinh</p>
+        <p>Nghề nghiệp: Sinh Viên</p>
+        <p>Mục tiêu: Nâng cao kiến thức và kỹ năng trong ngành Công Nghệ Thông Tin.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
